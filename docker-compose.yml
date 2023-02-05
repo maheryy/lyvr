@@ -15,9 +15,11 @@ services:
     depends_on:
       - db
   db:
-    image: postgres
+    image: postgres:15-alpine
     volumes:
       - lyvr-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
     environment:
       - POSTGRES_DB=lyvr
       - POSTGRES_USER=postgres
