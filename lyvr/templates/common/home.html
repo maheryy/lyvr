@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<main>
+    <h1>Home page</h1>
+    <p><a href="{% url 'login' %}">Login</a></p>
+    {% if user.is_authenticated %}
+        <p>Hi {{ user.username }}!</p>
+    {% else %}
+        <p>Hi stranger!</p>
+    {% endif %}
+    {% if user.is_pro %}
+        <p>You are a pro</p>
+    {% else %}
+        <p>You are a customer</p>
+    {% endif %}
+    <p><a href="{% url 'book-example-list' %}">CRUD Books example</a></p>
+</main>
+{% endblock %}

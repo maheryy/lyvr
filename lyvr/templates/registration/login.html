@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Connexion{% endblock %}
+
+{% block content %}
+<main>
+    <h1>Connexion</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+    <p>Pas encore de compte ? <a href="{% url 'register' %}">Inscrivez-vous</a></p>
+    <p>Vous êtes une libraire ?<a href="{% url 'register-pro' %}">Inscrivez-vous</a></p>
+    <button type="submit">Se connecter</button>
+</main>
+{% endblock %}
