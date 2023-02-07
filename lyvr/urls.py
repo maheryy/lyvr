@@ -6,6 +6,11 @@ urlpatterns = [
     path('register/', auth.register, name='register'),
     path('pro/register/', auth.register_pro, name='register-pro'),
 
+    # Remove this test later
+    path('test-pro/', common.test_pro_view, name='test-pro'),
+
+    
+    
     # Remove this example later
     path('books/', books_example.list, name='book-example-list'),
     path('books/new/', books_example.create, name='book-example-new'),
