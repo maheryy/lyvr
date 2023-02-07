@@ -1,0 +1,22 @@
+[
+  {
+    "model": "lyvr.user",
+    "pk": 1,
+    "fields": {
+      "username": "pro",
+      "email": "pro@lyvr.com",
+      "password": "pbkdf2_sha256$390000$6dQRVBU43R8xOOy7YVPMz2$SblL6YTrvJ3HYABASF1djxHBAF+0sQIcLgGCMcaaNUQ=",
+      "is_pro": true
+    }
+  },
+  {
+    "model": "lyvr.user",
+    "pk": 2,
+    "fields": {
+      "username": "user",
+      "email": "user@lyvr.com",
+      "password": "pbkdf2_sha256$390000$6dQRVBU43R8xOOy7YVPMz2$SblL6YTrvJ3HYABASF1djxHBAF+0sQIcLgGCMcaaNUQ=",
+      "is_pro": false
+    }
+  }
+]
